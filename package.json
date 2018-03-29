@@ -1,0 +1,31 @@
+{
+  "name": "@homeaway/confluent-node-rdkafka",
+  "version": "0.1.0",
+  "description": "",
+  "license": "UNLICENSED",
+  "author": {
+    "name": "Ryan Burke",
+    "email": "codeburke.github@gmail.com"
+  },
+  "scripts": {
+    "problem": "node lib/index.js",
+    "test": "npm run nyc",
+    "nyc": "NODE_ENV=test nyc mocha --check-leaks test/*.test.js --print both --dir docs/reports/coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.homeawaycorp.com:edap/confluent-node-rdkafka.git"
+  },
+  "engines": {
+    "node": ">=6.11.2",
+    "npm": ">=3.10.10"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "mocha": "^5.0.1",
+    "nyc": "^11.5.0",
+    "proxyquire": "^2.0.1",
+    "sinon": "^4.4.2"
+  }
+}
